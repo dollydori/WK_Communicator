@@ -1,0 +1,103 @@
+body {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	text-shadow: 0px 0px 10px black;
+	color: black;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: black;
+}
+
+#display {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	color: white;
+}
+
+#display.loading_img {
+	background-position: center;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-image: url(imgs/loading.gif);
+}
+
+.name {
+	position: absolute;
+	top: 5px;
+	left: 15px;
+	font-size: 42px;
+	text-transform: uppercase;
+}
+
+.content {
+	position: absolute;
+	width: 100%;
+	top: 50px;
+	left: 5px;
+	font-size: 100px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.footnote {
+	position: absolute;
+	right: 15px;
+	top: 5px;
+	font-size: 20px;
+	color: #999;
+	//text-shadow: none;
+}
+
+.image {
+	position: absolute;
+	bottom: 20px;
+	background-size: contain;
+	-moz-background-size: contain;
+	background-position: center;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	width: 100%;
+}
+
+.id {
+	display: none;
+}
+
+#to_prev {
+	position: absolute;
+	width: 15%;
+	height: 100%;
+	left: 0;
+	cursor: pointer;
+	background-color: white;
+	opacity: 0;
+}
+
+#to_prev:hover {
+	opacity: 0.1;
+}
+
+#to_next {
+	position: absolute;
+	width: 15%;
+	height: 100%;
+	right: 0;
+	cursor: pointer;
+	background-color: white;
+	opacity: 0;
+}
+
+#to_next:hover {
+	opacity: 0.1;
+}
+
+.log_bg {
+	color: #333;
+	line-height: 32px;
+}

@@ -1,0 +1,21 @@
+curl -F 'client_id=27311fac2588445c9abaa78d30d6478e' \
+     -F 'client_secret=d812d53e7d0649ef85b329385e3e7b30' \
+     -F 'object=tag' \
+     -F 'aspect=media' \
+     -F 'object_id=wkshare' \
+     -F 'callback_url=http://wkshanghai.com/display/instagram.php' \
+     https://api.instagram.com/v1/subscriptions/
+
+{
+	"meta": {
+		"code":200
+	},
+	"data": {
+		"object":"tag",
+		"object_id":"wkshare",
+		"aspect":"media",
+		"callback_url":"http:\/\/wkshanghai.com\/display\/instagram.php",
+		"type":"subscription",
+		"id":"1792544"
+	}
+}
